@@ -1,29 +1,40 @@
-import React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from 'reactstrap';
+
 
 const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <div>
-      <p>List Based</p>
-      <Nav>
-        <NavItem>
-          <NavLink href="#">Home</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">About us</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">Another Link</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink disabled href="#">Disabled Link</NavLink>
-        </NavItem>
-      </Nav>
-      <hr />
-      <p>Link Based</p>
-      <Nav>
-        <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
-      </Nav>
+      <Navbar className="bg-dark "  expand="md">
+        <NavbarBrand href="/" className="offset-1 text-light fs-1 text">Ss-Foods</NavbarBrand>
+        <NavbarToggler  onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="offset-3" navbar>
+            <NavItem className="px-3" >
+              <NavLink href="/" className="text-light fs-4 text"><i class="fa fa-home"></i>Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="" className="text-light fs-4 text px-3">About</NavLink>
+            </NavItem>
+            <NavItem>
+               <NavLink className="text-light fs-4 text px-3">Contact</NavLink>
+            </NavItem>
+          </Nav>
+         
+        </Collapse>
+      </Navbar>
     </div>
   );
 }
