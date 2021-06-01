@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from "./Header";
-import Slide from "./Slide";
+import Slidebar from "./Slidebar";
 
 
 
 function Home(props){
     return(
         <React.Fragment>
-             <div>
+         
                 <Header />
-               <Slide />
-           </div>
+               <Slidebar />
+       
         </React.Fragment>
     );
 }
