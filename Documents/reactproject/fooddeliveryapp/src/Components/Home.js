@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from "./Header";
+import Footer from "./Footer";
 import Slidebar from "./Slidebar";
 
 
@@ -10,6 +11,7 @@ function Home(props){
          
                 <Header />
                <Slidebar />
+               <Footer />
        
         </React.Fragment>
     );
