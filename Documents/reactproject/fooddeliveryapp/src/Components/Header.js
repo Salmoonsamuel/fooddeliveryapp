@@ -6,7 +6,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
+  Button
 } from 'reactstrap';
 
 
@@ -17,23 +18,23 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar className="bg-dark "  expand="sm">
-        <NavbarBrand href="/" className="offset-1 text-light fs-1 text  "><i class="fa fa-leaf"></i>Ss-Foods</NavbarBrand>
+      <Navbar className="bg-dark fixed-top"  expand="sm">
+        <NavbarBrand href="/" className=" text-light fs-3 text pt-2 offset-1 "><i class="fa fa-leaf "></i> Ss-Foods</NavbarBrand>
         <NavbarToggler  onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="offset-3" navbar>
-            <NavItem className="px-3" >
-              <NavLink href="/" className="text-light fs-6 text"><i class="fa fa-home">-</i>Home</NavLink>
+          <Nav className="offset-3 pt-3 " navbar>
+            <NavItem className="px-2">
+              <NavLink href="/" className="text-light fs-6 text "><i class="fa fa-home">-</i>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="" className="text-light fs-6 text px-3"><i class="fa fa-info">-</i>About</NavLink>
+              <NavLink href="" className="text-light fs-6 text" ><i class="fa fa-info">-</i>About</NavLink>
             </NavItem>
-            <NavItem>
-               <NavLink className="text-light fs-6 text px-3"><i class="fa fa-address-card">-</i>Contact</NavLink>
+            <NavItem className="px-2">
+               <NavLink className="text-light fs-6 text ">Contact</NavLink>
             </NavItem>
-            <a role="button" class="text-info spadding btn btn-md b fs-5 text fw-bold" >
-                <i class="fa fa-sign-in">-</i>Sign-In 
-                </a>
+              <Button role="button" class="text-light  btn btn-md b fs-6 text d-flex" >
+               Sign-In / <span class="text-info">Register</span>
+                </Button>
           </Nav>
          
         </Collapse>

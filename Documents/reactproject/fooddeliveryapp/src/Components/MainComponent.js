@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import Home from './Home';
+import Header from "./Header";
+import Footer from "./Footer";
+import Slidebar from "./Slidebar";
 
 
 class Main extends Component {
 
     render(){
         return(
-            <div>
+            <React.Fragment>
+         
+                <Header />
+               <Slidebar />
                <Home />
-            </div>
+               <Footer />
+       
+        </React.Fragment>
         );
     }
 }
