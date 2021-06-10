@@ -32,7 +32,7 @@ const Header = (props) => {
             <NavItem className="px-2">
                <NavLink className="text-light fs-6 text ">Contact</NavLink>
             </NavItem>
-              <Button role="button" class="text-light  btn btn-md b fs-6 text d-flex" >
+              <Button role="button" class="text-light  btn btn-md  fs-6 text " >
                Sign-In / <span class="text-info">Register</span>
                 </Button>
           </Nav>
