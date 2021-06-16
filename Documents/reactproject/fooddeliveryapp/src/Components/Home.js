@@ -30,7 +30,7 @@ const Home = (props) => {
                            <Button  onClick={Text} >Submit</Button>
                         </InputGroupAddon>
                      </InputGroup>
-                   <p className="text-center fw-bold text-danger" id="message">Check Your in Service Area or Not:</p>
+                   <p className="text-center fw-bold text-dark" id="message">Check Your in Service Area or Not:</p>
                  </div>
              </div>
              <div className="row ">
@@ -40,7 +40,7 @@ const Home = (props) => {
              <br />
              <div className="row text-center offset-2">
                  <div className="col-sm-10">
-                     <h4 className="bg-dark text-light pb-1 mb-5 fw-bold">Membership Packages Includes:</h4>
+                     <h4 className="bg-dark text-light pb-1 mb-5 fw-bold py-2">Membership Packages Includes:</h4>
                  </div>
              </div>
              <div className="row">

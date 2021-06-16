@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer(props) {
     return (
@@ -8,10 +9,9 @@ function Footer(props) {
                     <div className="col-4 col-sm-2 offset-1">
                         <h5 className="text-info">Pages</h5>
                         <ul className="list-unstyled">
-                            <li ><a className="text-white" href="#">Home</a></li>
-                            <li><a className="text-white" href="#">Directory</a></li>
-                            <li><a className="text-white" href="#">About</a></li>
-                            <li><a className="text-white" href="#">Contact</a></li>
+                            <li><Link className="text-white" to='/Home' >Home</Link></li>
+                            <li><Link className="text-white" to='/About'  >About</Link></li>
+                            <li><Link className="text-white" to='/Contact'>Contact</Link></li>
                         </ul>
                     </div>
                     <div className="col-6 col-sm-3 text-center">
@@ -23,7 +23,7 @@ function Footer(props) {
                     </div>
                     <div className="col-sm-4 text-center">
                         <h5 className="text-info ">Contact-us</h5>
-                        <a role="button" className="text-white" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-555-1234</a><br />
+                        <a role="button" className="text-white" href="tel:+12065551234"><i className="fa fa-phone" /> 1-718-674-4990</a><br />
                         <a role="button" className="text-white" href="mailto:notreal@notreal.co"><i className="fa fa-envelope-o" /> salmoonsamuel08@gmail.com</a>
                     </div>
                 </div>

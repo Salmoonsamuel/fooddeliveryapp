@@ -42,11 +42,11 @@ Footer{
    padding: 20px  0 0 100px;
    margin-top: 50px;
 }
-.card {
+/* .card {
   background-color: black;
   color: white;
 
-}
+} */
 
 .card-title {
   font: 500 1.25rem "Lobster", cursive;

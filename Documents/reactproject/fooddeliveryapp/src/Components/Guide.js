@@ -7,7 +7,7 @@ function Guide(props){
       <div className="col-sm-4">
             <Card className="">
               <CardBody>
-                 <CardTitle className="bg-light text-dark text-center">{props.guide.name}</CardTitle>
+                 <CardTitle className="bg-dark text-light text-center">{props.guide.name}</CardTitle>
                  <br />
                  <h6 class="card-subtitle mb-2 text-muted">Follow these steps:</h6>
                       <ul>
